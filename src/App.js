@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+import { Header } from "./components/Header";
+import JsonData from "./data.json";
+import SmoothScroll from "smooth-scroll";
+import { AboutMe } from "./components/AboutMe";
+import { Skills } from "./components/Skills";
+
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true,
+});
 
 function App() {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+    console.log(landingPageData);
+  }, [landingPageData]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header data={landingPageData.Header} />
+      <AboutMe data={landingPageData.About} />
+      <Skills />
     </div>
   );
 }
