@@ -176,9 +176,10 @@ ul#nav li a {
 
   /* About */
 
+
   .about-container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -194,6 +195,10 @@ ul#nav li a {
     margin-right: 50px;
   }
 
+  .about-text{
+    width: 50%;
+  }
+
   .text-about{
     width: 90%;
     font-family: 'Josefin Sans', sans-serif;
@@ -203,9 +208,24 @@ ul#nav li a {
 
   /* skills */
 
+  #skills{
+    background-color: #222222;
+  }
+
+  .title-skill{
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #b1b1b1;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2.7px;
+    font-size: 50px;
+  }
+
   .skill-img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 25px;
     padding: 5px;
   }
@@ -219,16 +239,39 @@ ul#nav li a {
     align-content: center;
   }
 
-  .title-skill{
-    align-items: center;
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
-    color: #b1b1b1;
-    font-family: 'Alfa Slab One', cursive;
-    letter-spacing: 2.7px;
-    font-size: 50px;
+  .skill-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 18px;
   }
+
+  .skill-container:hover{
+    border: 2px solid #2c2c2c;
+  }
+
+  /* skill 2 
+
+
+  .skill-img2{
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .Container-progress {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+*/
+
 
 
 
