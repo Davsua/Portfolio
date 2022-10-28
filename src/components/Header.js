@@ -48,8 +48,13 @@ export const Header = (props) => {
 
       <div className="row banner">
         <div className="banner-text">
+          <h2 className="typical">
+            <Typical loop={1} steps={["Hi there, I'm...", 2000]} />
+          </h2>
           <bottom>
-            <h1>{props.data ? props.data.name : "Loading"}.</h1>
+            <h1 className="Header-name">
+              {props.data ? props.data.name : "Loading"}
+            </h1>
           </bottom>
           <h2 className="typical">
             <Typical
