@@ -1,6 +1,6 @@
 import React from 'react';
 //import { Link } from "react-router-dom";
-import MoviesDb from '../../images/MoviesDb.png';
+//import MoviesDb from '../../images/MoviesDb.png';
 
 export default function ProjectItem({
   title = 'Project',

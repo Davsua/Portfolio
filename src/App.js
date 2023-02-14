@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import { Header } from "./components/Header";
-import JsonData from "./data.json";
-import SmoothScroll from "smooth-scroll";
-import { AboutMe } from "./components/AboutMe";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { SocialMediaButtons } from "./components/SocialMediaButtons";
-import Contact from "./components/Contact";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navigation from "./components/Navigation";
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import { Header } from './components/Header';
+import JsonData from './data.json';
+import SmoothScroll from 'smooth-scroll';
+import { AboutMe } from './components/AboutMe';
+import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
+import { SocialMediaButtons } from './components/SocialMediaButtons';
+import Contact from './components/Contact';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -29,23 +29,23 @@ function App() {
         <Navigation />
         <Routes>
           <Route
-            path="/"
+            path='/'
             element={<Header data={landingPageData.Header} />}
           ></Route>
 
           <Route
-            path="/aboutme"
+            path='/aboutme'
             element={<AboutMe data={landingPageData.About} />}
           ></Route>
 
-          <Route path="/skills" element={<Skills />}></Route>
+          <Route path='/skills' element={<Skills />}></Route>
 
           <Route
-            path="/projects"
+            path='/projects'
             element={<Projects data={landingPageData.Projects} />}
           ></Route>
 
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
         </Routes>
 
         <SocialMediaButtons />
