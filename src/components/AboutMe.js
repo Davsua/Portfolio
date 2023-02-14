@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import profile from "../images/imagenelegante.jpg";
 
 export const AboutMe = (props) => {

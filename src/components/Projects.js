@@ -6,7 +6,7 @@ import WeatherApp from "../images/weatherApp.png";
 
 export const Projects = (props) => {
   return (
-    <>
+    <section id="projects">
       <div className="projects-container">
         <div className="project-box">
           <a
@@ -72,6 +72,6 @@ export const Projects = (props) => {
           </a>
         </div>
       </div>
-    </>
+    </section>
   );
 };
